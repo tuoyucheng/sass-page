@@ -32,11 +32,11 @@ header nav a {
   color: #fff;
   background-color: #6BA7ED;
   border: none;
-}
 
-.contact:hover {
-  background: #333;
-  transition: 0.3s;
+  &:hover {
+    background: #333;
+    transition: 0.3s;
+  }
 }
 
 .keyvisual {
@@ -133,17 +133,17 @@ header nav a {
   margin: 0 auto;
   gap: 100px 100px;
   justify-content: flex-start;
-}
 
-.logo-box img {
-  width: 300px;
-  height: 300px;
-  opacity: 0.8;
-  transition: all 0.7s;
-}
+  img {
+    width: 300px;
+    height: 300px;
+    opacity: 0.8;
+    transition: all 0.7s;
 
-.logo-box img:hover {
-  opacity: 1.0;
+    &:hover {
+      opacity: 1.0;
+    }
+  }
 }
 
 .plan {
@@ -162,36 +162,34 @@ header nav a {
   margin: 0 auto;
   table-layout: fixed;
   width: 100%;
-}
 
-.cell--table th {
-  background-color: #6EA7EB;
-  font-size: 16px;
-  line-height: 26px;
-}
+  th {
+    background-color: #6EA7EB;
+    font-size: 16px;
+    line-height: 26px;
+    border: 1px solid #fff;
+    padding: 10px;
+  }
 
-.cell--table th,
-.cell--table td {
-  border: 1px solid #fff;
-  padding: 10px;
-}
+  td {
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+  }
 
-.cell--table td {
-  text-align: center;
-  font-size: 16px;
-  line-height: 26px;
-}
+  tr {
+    background: #fff;
 
-.cell--table tr {
-  background: #fff;
-}
+    &:nth-child(even) {
+      background: #E0EFFF;
+    }
+  }
 
-.cell--table tr:nth-child(even) {
-  background: #E0EFFF;
-}
-
-.cell--table tbody tr:last-child {
-  border-top: 1px double #FFFFFF;
+  tbody tr:last-child {
+    border-top: 1px double #FFFFFF;
+  }
 }
 
 .sns {
@@ -230,21 +228,20 @@ footer p {
   overflow: hidden;
   text-align: center;
   transition: 0.5s;
-}
 
-.sns-icons li i:hover {
-  background-color: #fff;
+  &:hover {
+    background-color: #fff;
+  }
 }
 
 @media screen and (max-width: 1199px) {
-
   .inner {
     max-width: 97%;
   }
 
   .keyvisual {
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
   }
 
   .content {
@@ -266,24 +263,22 @@ footer p {
     align-items: center;
     flex-direction: column;
     gap: 0;
-  }
 
-  .logo-box img {
-    vertical-align: top;
-  }
+    img {
+      vertical-align: top;
+    }
 
-  .logo-box :nth-of-type(3n) {
-    margin-bottom: 80px;
-  }
+    :nth-of-type(3n) {
+      margin-bottom: 80px;
+    }
 
-  .logo-box :last-child {
-    margin-bottom: 0px;
+    :last-child {
+      margin-bottom: 0px;
+    }
   }
-
 }
 
 @media screen and (max-width: 767px) {
-
   .header-contents {
     display: flex;
     justify-content: space-between;
@@ -302,26 +297,35 @@ footer p {
     align-items: center;
     z-index: 90;
     background-color: #3584bb;
-  }
 
-  .menu-btn span,
-  .menu-btn span:before,
-  .menu-btn span:after {
-    content: '';
-    display: block;
-    height: 3px;
-    width: 25px;
-    border-radius: 3px;
-    background-color: #ffffff;
-    position: absolute;
-  }
+    span {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 25px;
+      border-radius: 3px;
+      background-color: #ffffff;
+      position: absolute;
 
-  .menu-btn span:before {
-    bottom: 8px;
-  }
+      &:before,
+      &:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background-color: #ffffff;
+        position: absolute;
+      }
 
-  .menu-btn span:after {
-    top: 8px;
+      &:before {
+        bottom: 8px;
+      }
+
+      &:after {
+        top: 8px;
+      }
+    }
   }
 
   .content {
@@ -340,15 +344,15 @@ footer p {
     margin: 0 auto;
     table-layout: fixed;
     width: 100%;
-  }
 
-  .cell--table th {
-    font-size: 14px;
-    line-height: 22px;
-  }
+    th {
+      font-size: 14px;
+      line-height: 22px;
+    }
 
-  .cell--table td {
-    font-size: 12px;
+    td {
+      font-size: 12px;
+    }
   }
 
   .sns {
@@ -358,27 +362,26 @@ footer p {
   .sns-icons {
     padding: 0 15px;
     flex-direction: column;
-  }
 
-  .sns-icons li {
-    padding: 25px 0;
-    width: 100%;
-    color: #8C8C8C;
-    font-size: 40px;
-    overflow: hidden;
-    text-align: center;
-    transition: 0.5s;
-  }
+    li {
+      padding: 25px 0;
+      width: 100%;
+      color: #8C8C8C;
+      font-size: 40px;
+      overflow: hidden;
+      text-align: center;
+      transition: 0.5s;
 
-  .sns-icons li:hover {
-    width: 100%;
-    background-color: #fff;
-    text-align: center;
-  }
+      &:hover {
+        width: 100%;
+        background-color: #fff;
+        text-align: center;
+      }
 
-  .sns-icons li i {
-    padding: 50px;
-    color: #8C8C8C;
+      i {
+        padding: 50px;
+        color: #8C8C8C;
+      }
+    }
   }
-
 }

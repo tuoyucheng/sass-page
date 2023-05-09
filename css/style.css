@@ -166,15 +166,13 @@ header nav a {
   background-color: #6EA7EB;
   font-size: 16px;
   line-height: 26px;
-}
-
-.cell--table th,
-.cell--table td {
   border: 1px solid #fff;
   padding: 10px;
 }
 
 .cell--table td {
+  border: 1px solid #fff;
+  padding: 10px;
   text-align: center;
   font-size: 16px;
   line-height: 26px;
@@ -238,46 +236,57 @@ footer p {
   .inner {
     max-width: 97%;
   }
+
   .keyvisual {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .content {
     padding-top: 250px;
     padding-bottom: 250px;
   }
+
   .work-contents {
     width: 100%;
     flex-direction: column;
     padding-bottom: 50px;
   }
+
   .work-text {
     width: 100%;
   }
+
   .logo-box {
     align-items: center;
     flex-direction: column;
     gap: 0;
   }
+
   .logo-box img {
     vertical-align: top;
   }
+
   .logo-box :nth-of-type(3n) {
     margin-bottom: 80px;
   }
+
   .logo-box :last-child {
     margin-bottom: 0px;
   }
 }
+
 @media screen and (max-width: 767px) {
   .header-contents {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .contact {
     display: none;
   }
+
   .menu-btn {
     display: flex;
     height: 60px;
@@ -287,9 +296,8 @@ footer p {
     z-index: 90;
     background-color: #3584bb;
   }
-  .menu-btn span,
-.menu-btn span:before,
-.menu-btn span:after {
+
+  .menu-btn span {
     content: "";
     display: block;
     height: 3px;
@@ -298,40 +306,62 @@ footer p {
     background-color: #ffffff;
     position: absolute;
   }
+
+  .menu-btn span:before,
+  .menu-btn span:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+  }
+
   .menu-btn span:before {
     bottom: 8px;
   }
+
   .menu-btn span:after {
     top: 8px;
   }
+
   .content {
     padding: 200px 0;
   }
+
   .title1 {
     font-size: 40px;
   }
+
   .title2 {
     font-size: 30px;
   }
+
   .cell--table {
     margin: 0 auto;
     table-layout: fixed;
     width: 100%;
   }
+
   .cell--table th {
     font-size: 14px;
     line-height: 22px;
   }
+
   .cell--table td {
     font-size: 12px;
   }
+
   .sns {
     padding: 50px 0;
   }
+
   .sns-icons {
     padding: 0 15px;
     flex-direction: column;
   }
+
   .sns-icons li {
     padding: 25px 0;
     width: 100%;
@@ -341,14 +371,17 @@ footer p {
     text-align: center;
     transition: 0.5s;
   }
+
   .sns-icons li:hover {
     width: 100%;
     background-color: #fff;
     text-align: center;
   }
+
   .sns-icons li i {
     padding: 50px;
     color: #8C8C8C;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
